@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image: url('gridbg.png');
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* You can add more styles here */
+  }
+  
+  .dot-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.285);
+  }
+  
+  .darker-dot, .selected-dot{
+    background-color: rgb(255, 255, 255);
+  }
+  /* ... Previous CSS rules ... */
+
+.image-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+  }
+  
+  .image-container button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+    
